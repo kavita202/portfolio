@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<!-- navbar -->
+<div id="mySidebar" class="sidebar" style="display:none">
+  <a class="active" href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#portfolio">Portfolio</a>
+ <a href="#contact">Contact</a>
+</div>
+  <button class="openbtn" data-aos="fade-left" data-aos-delay="400" >
+    <div class="containernav" onclick="myFunction(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+  </button>
+
+
+<!-- intropage -->
+<div id="icons">
+<a href="https://github.com/kavita202" target="_blank"><i id= "icon1" class="fa fa-github" data-aos="fade-right" style="font-size:48px" data-aos-delay="400"></i></a>
+<a href="" target="_blank"><i class="fa fa-linkedin-square" data-aos="fade-left"  style="font-size:48px" data-aos-delay="400"></i></a></div>
+<h5>Full Stack Developer</h5>
+    <div class="bgimg-1" id="home">
+        <h1 class="caption">Kavita Kaur</h1>
+         
+        </div>
+        
+  </div>
+
+    <!-- about me text (white block) -->
+    <div class = "white" >
+        <h3 id="about">About me</h3>
+        <div class="About-me-row" data-aos="fade-up" data-aos-delay="150">
+          <div class="About-me-column">
+            Hi I'm Kavita. 
+            <br>
+            This is me as a child in our family home, born into a family who we could argue were a little confused about interior design. Despite the many years that passed and my minimalist lifestyle, my parents style failed to budge. However,
+            my love for simplicity is portrayed in my work. By using a combination of clean designs, concise content and thoughtful interactions, I hope to create purposeful work. 
+            <br>
+            (something about teaching/covid - dependancy on tech. Recognise one can have a greater influence on education through tech than inside the classroom) 
+            <br>
+            Aside from computer programming, my time my days consists of weight-training and experimenting with low-fodmap foods. 
+          </div>
+          <div class="About-me-column">Place 1/2 images here</div>
+        </div>  
+    </div>
+
+    <div class="bgimg-2">
+      <div class="caption2">SKILLS</div>
+    </div>
+    <!-- Nice background 2 -->
+   
+    <div style="position:relative;">
+      <div class ="white skillscont">
+      <section id="skills">
+        <div class="my-container">
+          <div class="skill-items">
+            <div class="skill-item" data-aos="fade-down" data-aos-delay="150">
+              <img src="./img/python.png" alt="python icon" />
+            </div>
+            <div class="skill-item" data-aos="fade-down" data-aos-delay="150">
+              <img src="./img/js.jpg" alt="javascript icon" />
+            </div>
+            <div class="skill-item" data-aos="fade-down" data-aos-delay="150">
+              <img src="./img/react.jpg" alt="react icon" />
+            </div>
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
+              <img src="./img/node.png" alt="node icon" />
+            </div>
+         
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
+              <img src="./img/html5.jpg" alt="html5 icon" />
+            </div>
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
+              <img src="./img/css3.jpg" alt="css3 icon" />
+            </div>
+
+        </div>
+      </div>
+      </section>
+    </div>
+    
+    <div class="bgimg-2">
+      <div class="caption2">PORTFOLIO</div>
+    </div>
+    
+    <div style="position:relative">
+      <div class="white">
+        <div id="containerParent">
+          <div class="column" id="column">
+            <div class="card">
+              <div class="container"><img></img>
+                <!-- <img src="https://kavita-kaur998.nimbusweb.me/box/attachment/23cvf4xgzxo1kmee/rrSZdG7pDtWyFkCZ/preview"></img> -->
+                <a href="https://schoolofcode.github.io/w0d0_precourse-challenge-kavita202/Tribute_page.html" target = "_blank"><h2>Tribute Page</h2></a>
+                <p>A recognition of Tesla's contribution towards the history of AC as well as other indivuals</p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="column" id="column">
+            <div class="card">
+              <div class="container">
+              <img src="" name="iframe_a" ;></iframe>
+                <h2>Trivia</h2>
+                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              </div>
+            </div>
+          </div>
+              
+          <div class="column" id="column">
+            <div class="card">
+              <div class="container">
+              <img src="";></img>
+                <h2>Recipe Finder</h2>
+                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    </div>
+      <div class="bgimg-1" style="position:relative">
+      <div id="contact">
+        <h3>CONTACT ME</h3>
+        <form action="mailto:kavitarani202@gmail.com" method="post" enctype="text/plain">
+          <label for="fname">Full Name</label>
+          <input type="text" name="fname" required>
+          <label for="email">Email Address</label>
+          <input type="email" name="email" required>
+          <label for="phone">Phone</label>
+          <input type="tel" name="phone">
+          <label for="subject">Message</label>
+          <textarea id="subject" name="subject" style="height:200px" required></textarea>
+          <br>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+</div>
+   
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="main.js"></script>
+</body>
+
+         
