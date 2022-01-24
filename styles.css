@@ -68,16 +68,12 @@ html {
   color: #6b35e8;
 }
 
-/* .sidebar .closebtn {
-  position: relative;
-  left: 600px;
-  cursor: pointer;
-  font-size: 24px;
+@media (max-width: 620px) {
+  .sidebar a {
+    font-size: 20px;
+    margin: 0;
+  }
 }
-.closebtn {
-  top: 0px;
-} */
-
 .openbtn {
   z-index: 2;
   top: 30px;
@@ -98,14 +94,6 @@ a:nth-child(4) {
 .active {
   border-bottom: 1px solid #3f13a4;
 }
-@media screen and (max-height: 450px) {
-  .sidebar {
-    padding-top: 15px;
-  }
-  .sidebar a {
-    font-size: 18px;
-  }
-}
 
 .bgimg-1,
 .bgimg-2 {
@@ -124,8 +112,11 @@ a:nth-child(4) {
 }
 
 .bgimg-2 {
-  background-image: url("https://wallpaperaccess.com/full/2887457.jpg");
-
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    /* url("https://img.freepik.com/free-photo/background-pattern-natural-black-slate-background_53938-47.jpg?size=626&ext=jpg"); */
+      url("https://images.unsplash.com/photo-1582738411706-bfc8e691d1c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80");
+  /* opacity: 0.5; */
+  background-color: black;
   min-height: 200px;
   background-size: 100%;
 }
@@ -152,10 +143,10 @@ h5,
   padding: 5px 10px;
   font-size: 24px;
   letter-spacing: 3px;
-  /* background-color: #fafafa; */
   border: 1px solid;
   color: #fafafa;
   text-align: justify;
+  box-shadow: 1px 2px 3px rgba(245, 245, 245, 0.5);
 }
 
 #icons {
@@ -219,7 +210,7 @@ h2 {
   box-sizing: inherit;
 }
 .card {
-  box-shadow: 0 4px 8px 0 hsl(0, 0%, 0%);
+  box-shadow: 0 4px 8px 0 hsl(0, 0%, 0%, 0.5);
   width: 350px;
   height: 400px;
 }

@@ -14,8 +14,6 @@ AOS.init({});
 function myFunction(x) {
   console.log("this should cross");
   x.classList.toggle("cross");
-  x.classList.toggle("data-aos");
-  x.classList.toggle("data-aos-delay");
   console.log(x.classList);
   const sidebar = document.getElementById("mySidebar");
   if (sidebar.style.display === "block") {
